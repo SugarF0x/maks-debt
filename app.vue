@@ -31,6 +31,9 @@ const cards = ref([
         </div>
       </div>
     </div>
+    <div class="content">
+      <Timer />
+    </div>
   </Background>
 </template>
 
@@ -71,6 +74,10 @@ body {
   span {
     margin: auto;
   }
+}
+
+.content {
+  padding-top: 420px;
 }
 
 @keyframes rotate360 {
