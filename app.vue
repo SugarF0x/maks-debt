@@ -1,5 +1,6 @@
 <template>
   <Background>
+    <FloatingText />
     <Carousel />
     <Prompt />
     <Timer />
