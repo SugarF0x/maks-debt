@@ -21,7 +21,7 @@ const cards = ref([
         class="card"
         :style='`
           background-image: url(${url});
-          transform: rotateY(${index * Math.floor(360 / cards.length)}deg) translateZ(430px); }
+          transform: rotateY(${index * Math.floor(360 / cards.length)}deg) translateZ(430px);
         `'
       >
           <span>

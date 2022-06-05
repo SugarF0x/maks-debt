@@ -2,6 +2,7 @@
   <Background>
     <Carousel />
     <div class="content">
+      <Prompt />
       <Timer />
     </div>
   </Background>
