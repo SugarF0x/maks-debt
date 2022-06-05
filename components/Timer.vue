@@ -22,10 +22,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <h2>Просрочка составляет:</h2>
-  <div>{{ time }}</div>
+  <h4 class="timer-title">Время просрочки</h4>
+  <h5 class="timer">{{ time }}</h5>
 </template>
 
 <style scoped lang="scss">
+.timer-title {
+  font-size: 1em;
+}
 
+.timer {
+  font-size: 1em;
+}
 </style>
