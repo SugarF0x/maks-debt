@@ -10,9 +10,20 @@ const cards = ref([
   ['How IT Works', 'https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'],
   ['Woow', 'https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'],
 ])
+
+const width = ref(window.innerWidth)
+onMounted(() => {
+  window.addEventListener('resize', () => {
+    width.value = window.innerWidth
+  })
+})
+
+const scale = computed(() => Math.min(1, width.value / 1000))
+const spacer = computed(() => scale.value * 420 + 'px')
 </script>
 
 <template>
+  <div class="pad-my-ass" />
   <div class="container">
     <div class="carousel">
       <div
@@ -30,14 +41,24 @@ const cards = ref([
       </div>
     </div>
   </div>
+  <div class="spacer" />
 </template>
 
 <style scoped lang="scss">
+.pad-my-ass {
+  height: 2rem;
+}
+
+.spacer {
+  height: v-bind(spacer);
+}
+
 .container {
   position: relative;
   width: 320px;
   margin: 0 auto;
   perspective: 1000px;
+  transform: scale(v-bind(scale));
 }
 
 .carousel {

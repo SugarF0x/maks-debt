@@ -1,18 +1,10 @@
 <template>
   <Background>
     <Carousel />
-    <div class="content">
-      <Prompt />
-      <Timer />
-    </div>
+    <Prompt />
+    <Timer />
   </Background>
 </template>
-
-<style scoped lang="scss">
-.content {
-  padding-top: 420px;
-}
-</style>
 
 <style lang="scss">
 body {
