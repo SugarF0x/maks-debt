@@ -4,6 +4,7 @@
     <Carousel />
     <Prompt />
     <Timer />
+    <Mock />
   </Background>
 </template>
 
