@@ -53,6 +53,7 @@ onMounted(() => {
   position: absolute;
   opacity: 0;
   transition: opacity .5s ease-in-out;
+  user-select: none;
 }
 
 .text-visible {
