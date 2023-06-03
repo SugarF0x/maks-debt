@@ -66,7 +66,7 @@ const spacer = computed(() => scale.value * 420 + 'px')
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  animation: rotate360 60s infinite forwards linear;
+  animation: rotate360 36s infinite forwards linear;
 }
 
 .card {
